@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.photon.mvpdemoapp.ui.views.FontTextView
+        android:id="@+id/dialog_title_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_20"
+        android:gravity="center"
+        android:textColor="@color/gray_light"
+        android:textSize="19.2dp"
+        app:fontFile="Archer-Semibold.otf" />
+
+    <com.photon.mvpdemoapp.ui.views.FontTextView
+        android:id="@+id/dialog_message_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/dp_20"
+        android:textSize="14sp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/gray"
+        app:fontFile="Archer-Semibold.otf" />
+
+    <com.photon.mvpdemoapp.ui.views.FontTextView
+        android:id="@+id/dialog_dismiss_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_56"
+        android:layout_gravity="center_horizontal|center"
+        android:layout_marginTop="@dimen/dp_12"
+        android:background="@color/button_background"
+        android:gravity="center"
+        android:text="close"
+        android:textColor="@color/colorAccent"
+        app:fontFile="Archer-Semibold.otf" />
+
+</LinearLayout>

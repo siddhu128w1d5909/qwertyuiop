@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/main_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Home" />
+        <item
+            android:id="@+id/hod_nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Hod Home"
+            />
+        <item
+            android:id="@+id/nav_attendence"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Attendence" />
+        <item
+            android:id="@+id/nav_marks"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Marks" />
+        <item
+            android:id="@+id/nav_checklib"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Search Book" />
+        <item
+            android:id="@+id/nav_changpwd"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Change Password" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Logout"/>
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <group
+                android:id="@+id/sub_group"
+                android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Social Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Campus updates" />
+            </group>
+        </menu>
+    </item>
+
+
+</menu>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Property for Untouchable layout Properties -->
+    <declare-styleable name="UnTouchableFrameLayout">
+        <attr name="touchable_frame_layout" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="UnTouchableRelativeLayout">
+        <attr name="touchable_relative_layout" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="UnTouchableLinearLayout">
+        <attr name="touchable_linear_layout" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="UnTouchableCoordinatorLayout">
+        <attr name="touchable_coordinate_layout" format="boolean" />
+    </declare-styleable>
+
+    <!-- Property for Font -->
+    <declare-styleable name="FontView">
+        <!-- Simplest case where you point to a single file -->
+        <attr name="fontFile" format="string"/>
+    </declare-styleable>
+</resources>

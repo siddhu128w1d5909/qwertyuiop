@@ -1,0 +1,543 @@
+<resources>
+
+    <!-- College Application application theme. -->
+    <style name="AppTheme_Toolbar_Theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:textColorHint">@color/colorAccent</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+    </style>
+
+    <style name="DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="activity_search_list_item_text_view_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">@dimen/sp_16.8</item>
+
+    </style>
+
+    <style name="BabiesRUs_Header_Text_Appearance_Display_1" parent="Base.TextAppearance.AppCompat.Headline">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="BabiesRUs_Header_Text_Appearance_Display_2" parent="@style/Base.TextAppearance.AppCompat.Display2">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="RatingBarTheme" parent="Widget.AppCompat.RatingBar.Small">
+        <item name="colorControlNormal">@color/yellow</item>
+        <item name="colorControlActivated">@color/yellow</item>
+    </style>
+
+    <style name="Rating_bar_small" parent="Widget.AppCompat.RatingBar.Small">
+        <item name="android:numStars">5</item>
+        <item name="android:stepSize">0.5</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="colorControlNormal">@color/yellow</item>
+        <item name="colorControlActivated">@color/yellow</item>
+
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/dp_8</item>
+
+    </style>
+
+
+    <style name="Rating_bar_normal" parent="Widget.AppCompat.RatingBar.Indicator">
+        <item name="android:numStars">5</item>
+        <item name="android:stepSize">0.5</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="colorControlNormal">@color/yellow</item>
+        <item name="colorControlActivated">@color/yellow</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/dp_8</item>
+
+    </style>
+
+    <!-- Start Of Splash Screen Widget Styles -->
+
+    <style name="activity_splash_log_style">
+        <item name="android:layout_width">189dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!-- End Of Splash Screen Widget Styles -->
+
+    <!-- Start Of Welcome Screen Widget Styles -->
+
+    <style name="activity_home_skip_text_view_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">right|top</item>
+        <item name="android:textSize">@dimen/dp_16</item>
+        <item name="android:layout_marginTop">@dimen/dp_29.5</item>
+        <item name="android:layout_marginRight">@dimen/dp_29.5</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="activity_welcome_logo_image_view_style">
+        <item name="android:layout_width">222.5dp</item>
+        <item name="android:layout_height">76.5dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="activity_welcome_login_button_style" parent="Base.Widget.AppCompat.Button.Colored">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">66.3dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">19.2sp</item>
+    </style>
+
+    <style name="activity_welcome_create_registry_button_text_view" parent="Base.Widget.AppCompat.Button.Colored">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">66.3dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">19.2sp</item>
+    </style>
+
+    <!-- End Of Welcome Screen Widget Styles -->
+
+    <!-- Start Of Login Screen Widget Styles -->
+
+    <style name="activity_login_error_text_view_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/dp_48</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingTop">@dimen/dp_16</item>
+        <item name="android:paddingBottom">@dimen/dp_8</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/invalid_email_background</item>
+        <item name="android:textSize">15.4sp</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="activity_add_registry_add_shipping_error_text_view_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/dp_48</item>
+        <item name="android:gravity">left</item>
+        <item name="android:paddingLeft">@dimen/dp_24</item>
+        <item name="android:paddingTop">@dimen/dp_16</item>
+        <item name="android:paddingBottom">@dimen/dp_8</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@color/invalid_email_background</item>
+        <item name="android:textSize">15.4sp</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="activity_login_sign_in_with_your_registry_account_text_view_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_margin">29dp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">17.3sp</item>
+    </style>
+
+    <style name="activity_login_email_text_input_layout_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">27.5dp</item>
+        <item name="android:layout_marginRight">@dimen/dp_16</item>
+    </style>
+
+    <style name="activity_login_email_text_input_edit_text_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:maxLength">100</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">25.9sp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="activity_login_password_text_input_layout_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">27.5dp</item>
+        <item name="android:layout_marginRight">@dimen/dp_16</item>
+    </style>
+
+    <style name="activity_login_password_text_input_edit_text_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:maxLength">10</item>
+        <item name="android:textSize">25.9sp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="activity_login_password_show_text_view_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignBaseline">@id/activity_login_password_text_input_edit_text
+        </item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:layout_marginRight">@dimen/dp_24</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="activity_login_sign_in_button_style" parent="Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">19.2sp</item>
+        <item name="android:textColor">@color/gray_disabled</item>
+        <item name="android:background">@color/gray_very_light</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="activity_login_forgot_password_text_view_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">13.4sp</item>
+    </style>
+
+    <style name="activity_login_forgot_password_image_view_style">
+        <item name="android:layout_width">4dp</item>
+        <item name="android:layout_height">7dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/dp_4</item>
+    </style>
+
+    <style name="activity_login_forgot_password_layout_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginLeft">26dp</item>
+        <item name="android:layout_marginTop">@dimen/dp_20</item>
+    </style>
+
+    <!-- End Of Login Screen Widget Styles -->
+
+    <!-- Start of Registration Widget Styles -->
+
+    <style name="fragment_create_registry_next_button_style" parent="Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/gray_disabled</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:textSize">19.2sp</item>
+        <item name="android:enabled">true</item>
+        <item name="android:background">@color/button_background</item>
+    </style>
+
+    <style name="registry_settings_save_button_style" parent="Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/gray_disabled</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:textSize">19.2sp</item>
+        <item name="android:enabled">true</item>
+        <item name="android:background">@color/button_background</item>
+    </style>
+
+    <!-- End of Registration Widget Styles -->
+
+    <!-- Start of Discover products Widget Styles -->
+
+    <style name="activity_product_category_list_header_text_view_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/dp_20</item>
+    </style>
+    <style name="activity_product_category_list_item_text_view_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/dp_64</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">@dimen/dp_24</item>
+
+    </style>
+    <style name="activity_product_category_list_header_layout_style">
+        <item name="android:layout_marginTop">@dimen/dp_28</item>
+        <item name="android:layout_marginBottom">@dimen/dp_28</item>
+        <item name="android:layout_marginLeft">@dimen/dp_12</item>
+        <item name="android:layout_marginRight">@dimen/dp_12</item>
+    </style>
+
+    <style name="activity_product_category_list_item_layout_style">
+        <item name="android:layout_marginRight">@dimen/dp_26</item>
+    </style>
+
+    <style name="activity_search_list_list_item_view_style">
+        <item name="android:layout_marginRight">@dimen/dp_26</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_2</item>
+        <item name="android:background">@color/button_background</item>
+    </style>
+
+    <style name="activity_product_category_list_item_view_style">
+        <item name="android:layout_marginRight">@dimen/dp_26</item>
+        <item name="android:layout_marginLeft">@dimen/dp_26</item>
+
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_4</item>
+        <item name="android:background">@color/button_background</item>
+    </style>
+    <style name="activity_product_category_list_item_image_style">
+        <item name="android:layout_width">@dimen/dp_64</item>
+        <item name="android:layout_height">@dimen/dp_64</item>
+        <item name="android:layout_marginLeft">@dimen/dp_16</item>
+    </style>
+    <!-- End of Discover products Widget Styles -->
+
+    <!-- Start of PLP Styles -->
+    <style name="fragment_plp_subgroup_text_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="fragment_plp_group_text_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/gray_light</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:maxLines">1</item>
+
+    </style>
+    <!-- End of PLP Styles -->
+
+     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="pdp_button_disable">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:background">@color/pdp_ena_des_color</item>
+    </style>
+
+    <style name="pdp_button_enable">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:background">@color/pdp_ena_des_color</item>
+    </style>
+
+    <style name="pdp_button_inprogress">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="pdp_addtoreg_enable">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/addtoregistry_orange</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="MyRegistryOptionTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="navigation_drawer_text_style">
+        <item name="android:textSize">23sp</item>
+    </style>
+
+    <style name="toolbar_theme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/color_toolbar</item>
+        <item name="actionMenuTextColor">@color/color_toolbar</item>
+        <!-- android:textColorSecondary is the color of the menu
+             overflow icon (three vertical dots) -->
+        <item name="android:textColorSecondary">@color/color_toolbar</item>
+        <item name="android:background">@color/white</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <!-- TUTORIAL PAGE STYLES BEGIN.... -->
+    <style name="tutorial_babycap_style">
+        <item name="android:layout_width">78.5dp</item>
+        <item name="android:layout_height">75dp</item>
+        <item name="android:layout_marginLeft">25dp</item>
+        <item name="android:layout_marginTop">69dp</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:layout_marginRight">73.5dp</item>
+
+    </style>
+
+    <style name="tutorial_milk_bottle">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">91dp</item>
+        <item name="android:layout_marginTop">129dp</item>
+        <item name="android:layout_marginLeft">21dp</item>
+    </style>
+
+    <style name="tutorial_blue_circle_img">
+        <item name="android:layout_width">56dp</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:layout_marginRight">-18dp</item>
+        <item name="android:layout_marginTop">230dp</item>
+
+    </style>
+
+    <style name="tutorial_tricycle">
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_height">235.5dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginBottom">15.5dp</item>
+    </style>
+
+    <style name="tutorial_chine">
+        <item name="android:layout_width">137dp</item>
+        <item name="android:layout_height">200dp</item>
+        <item name="android:layout_marginBottom">71dp</item>
+    </style>
+
+    <style name="tutorial_green_circle_img">
+    <item name="android:layout_width">30.5dp</item>
+    <item name="android:layout_height">30.6dp</item>
+    <item name="android:layout_marginLeft">65dp</item>
+    <item name="android:layout_marginTop">45dp</item>
+</style>
+
+    <style name="tutorial_pink_circle_img">
+        <item name="android:layout_width">57dp</item>
+        <item name="android:layout_height">57dp</item>
+        <item name="android:layout_marginLeft">98dp</item>
+        <item name="android:layout_marginTop">-15dp</item>
+
+    </style>
+
+    <!-- TUTORIAL PAGE STYLES END.... -->
+
+
+    <style name="toolbar_theme_login" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="actionMenuTextColor">@color/white</item>
+        <!-- android:textColorSecondary is the color of the menu
+             overflow icon (three vertical dots) -->
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/gray_disabled</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="drawerArrowStyle">@style/toolbar_DrawerArrowStyle</item>
+        <item name="android:textColorHint">@color/colorAccent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="actionMenuTextColor">@color/colorAccent</item>
+        <item name="actionMenuTextAppearance">@style/MyMenuTextAppearance</item>
+        <item name="android:actionMenuTextAppearance">@style/MyMenuTextAppearance</item>
+    </style>
+    <style name="MyMenuTextAppearance" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="toolbar_DrawerArrowStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/colorAccent</item>
+    </style>
+
+    <style name="text_input_error_hint" parent="@android:style/TextAppearance">
+        <!--EditText hint color-->
+        <item name="android:textColorHint">@color/error_text_color</item>
+        <!-- TextInputLayout text color-->
+        <item name="colorControlActivated">@color/error_text_color</item>
+        <!-- EditText line color when EditText on-focus-->
+        <item name="colorControlHighlight">@color/error_text_color</item>
+        <!-- EditText line color when EditText  in un-focus-->
+        <item name="colorControlNormal">@color/error_text_color</item>
+    </style>
+
+    <!--     welcome page styles begin    -->
+    <style name="welcom_pink_circle_img">
+        <item name="android:layout_width">57dp</item>
+        <item name="android:layout_height">57dp</item>
+        <item name="android:layout_marginLeft">-30dp</item>
+
+    </style>
+
+    <style name="welcome_green_img">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">50dp</item>
+        <item name="android:paddingTop">100dp</item>
+    </style>
+
+    <style name="welcom_blue_circle_img">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:paddingRight">0dp</item>
+    </style>
+
+    <!--     welcome page styles end    -->
+
+
+    <!--   search bar styles   -->
+
+
+    <style name="AppTheme_Search_Theme">
+        <!-- Background for the search query section (e.g. EditText) -->
+        <item name="queryBackground">@color/white</item>
+        <!-- Background for the actions section (e.g. voice, submit) -->
+       <!-- <item name="submitBackground">...</item>-->
+        <!-- Close button icon -->
+       <!-- <item name="closeIcon">@drawable/close</item>
+        <item name="android:textCursorDrawable">@drawable/cursor</item>-->
+
+
+    </style>
+
+    <style name="alertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:fitsSystemWindows">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@color/white</item>
+        <item name="background">@color/white</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!--<item name="android:textAllCaps">false</item>-->
+        <item name="android:fitsSystemWindows">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+</resources>

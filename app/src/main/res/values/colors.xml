@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5e2d91</color>
+    <color name="colorPrimaryDark">#4C2576</color><!--#4b2474-->
+    <color name="colorAccent">#009ddb</color>
+    <color name="color_toolbar">#404040</color>
+    <color name="divider_color">#e7e7e7</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="yellow">#FF5733</color>
+
+    <color name="error_text_color">#ef0558</color>
+    <color name="error_color_red">#dd291d</color>
+    <color name="invalid_email_background">#dd291d</color>
+    <color name="gray_light">#666666</color>
+    <color name="gray">#999999</color>
+    <color name="gray_very_light">#f3f3f3</color>
+    <color name="button_background">#f3f3f3</color>
+    <color name="dark_gray">#666666</color>
+    <color name="darker_gray">#999999</color>
+    <color name="highlight_gray">#404040</color>
+    <color name="new_price_text_color">#ed1459</color>
+    <color name="plp_sort_footer_button_color">#00aeef</color>
+    <color name="dark_gray_oval">#cccccc</color>
+
+    <color name="gray_disabled">#b2b2b2</color>
+    <color name="addtoregistry_orange">#f66f02</color>
+    <color name="plp_green_dot">#70C13B</color>
+    <color name="pdp_ena_des_color">#f7f7f7</color>
+
+    <array name="dot_colors">
+        <item>#03A9F4</item>
+        <item>#E65100</item>
+        <item>#FFBB00</item>
+    </array>
+
+    <!--Names need to be changed-->
+    <color name="app_bkg_color">#ffffff</color>
+
+    <color name="edit_text_stroke_color_non_active">#ededed</color>
+    <color name="edit_text_fill_color">#f5f5f5</color>
+    <color name="edit_text_text_color">#A7A7A7</color>
+    <!--hamburger-->
+    <!--  <color name="primaryColor">#cc0000</color>
+      <color name="primaryColorDark">#cc0000</color>-->
+    <color name="colorTextPrimary">#212121</color>
+    <color name="colorTextSecondary">#727272</color>
+    <color name="textcolor">#fff</color>
+    <color name="showHideHtnbgColor">#a7a8aa</color>
+    <color name="edit_textColor">#111111</color>
+
+
+    <color name="colorPrimaryNavigation">#FFCE0A2C</color>
+    <color name="colorAccentNavigation">#FF80AB</color>
+    <color name="colorPrimaryDarkNavigation">#C51162</color>
+    <color name="primaryColor">#BE0D2C</color>
+    <color name="primaryColorDark">#CF0A2C</color>
+    <color name="lighter_gray">#D62E4B</color>
+
+
+    <color name="black_opacity">#A8A8A8</color>
+    <color name="transaction_memo">#F8F8F8</color>
+    <color name="red">#ff0000</color>
+    <color name="gradient_start">#c81e42</color>
+    <color name="security_subtitle">#5c5c5c</color>
+    <color name="catalina_blue">#073677</color>
+    <color name="divider_color_selected">#959595</color>
+    <color name="blue">#04BFEC</color>
+    <color name="pay_confirm_car_wash_bg">#f7f7f7</color>
+    <color name="pay_confirm_car_wash_txt">#adadad</color>
+    <color name="pay_confirm_car_wash_code">#333333</color>
+    <color name="black_opacity_80">#CC333333</color>
+    <color name="full_receipt_value_txt">#959595</color>
+    <color name="dashboard_footer_lyt_color">#f2f2f2</color>
+    <color name="tutorial_page_selected">#888</color>
+    <color name="catalina_blue_disable">#73ABF7</color>
+    <color name="edittext_focused_border_color">#50073677</color>
+
+    <color name="expanded_item_color">#F5F5F5</color>
+    <color name="collpased_title_color">#E2E2E2</color>
+    <color name="collpased_subtitle_color">#9EB6D8</color>
+    <color name="registration_password_hint_bkg_color">#DBE4F1</color>
+    <color name="registration_password_hint_txt_color">#545659</color>
+    <color name="registration_password_show_btn_color">#50111111</color>
+    <color name="registration_edittext_border_cursor_color">#527CB8</color>
+    <color name="edit_text_focused_border_color">#537cb9</color>
+    <color name="edit_text_red_border_color">#cf0a2c</color>
+    <color name="edit_text_bg_color">#FAFAFA</color>
+    <color name="button_pressed_state_color">#09306B</color>
+    <color name="button_normal_state_color">#0C479D</color>
+    <color name="button_facebook_color">#3c5a99</color>
+    <color name="button_twitter_color">#1da1f2</color>
+    <color name="button_linkedln_color">#0075B4</color>
+    <color name="edit_text_hint_color">#969696</color>
+    <color name="edit_text_color">#AAAAAA</color>
+    <color name="blue_text_color">#0C479D</color>
+    <color name="register_already">#5A7EB9</color>
+    <color name="pump_selection_gallery_color1">#E78495</color>
+    <color name="pump_selection_gallery_color2">#F1B6C0</color>
+
+    <color name="warning_color">#f4511e</color>
+    <color name="hint_color">#42000000</color>
+    <color name="success_color">#009688</color>
+    <color name="help_subtext_color">#1A1A1A</color>
+    <color name="car_wash_row_color">#DBE4F1</color>
+
+    <color name="thinner_divider">#1A333333</color>
+    <color name="thicker_divider">#40333333</color>
+    <color name="lighter_yellow">#FECA2E</color>
+    <color name="social_share_txt_color">#8A000000</color>
+    <color name="social_share_btn_txt_color">#0076ff</color>
+    <color name="social_share_divider_color">#d9d8d8</color>
+    <color name="linked_in_post_btn_color">#0077b5</color>
+    <color name="linked_in_share_border_color">#dedede</color>
+    <color name="signout_textcolor">#d8d8d8</color>
+    <color name="black_with_opacity_87">#DE000000</color>
+
+
+    <item name="blue1" type="color">#FF33B5E5</item>
+    <item name="purple" type="color">#FFAA66CC</item>
+    <item name="green" type="color">#FF99CC00</item>
+    <item name="orange" type="color">#FFFFBB33</item>
+    <item name="red1" type="color">#FFFF4444</item>
+    <item name="darkblue" type="color">#FF0099CC</item>
+    <item name="darkpurple" type="color">#FF9933CC</item>
+    <item name="darkgreen" type="color">#FF669900</item>
+    <item name="darkorange" type="color">#FFFF8800</item>
+    <item name="darkred" type="color">#FFCC0000</item>
+
+    <integer-array name="androidcolors">
+        <item>@color/blue1</item>
+        <item>@color/purple</item>
+        <item>@color/green</item>
+        <item>@color/orange</item>
+        <item>@color/red1</item>
+        <item>@color/darkblue</item>
+        <item>@color/darkpurple</item>
+        <item>@color/darkgreen</item>
+        <item>@color/darkorange</item>
+        <item>@color/darkred</item>
+    </integer-array>
+</resources>

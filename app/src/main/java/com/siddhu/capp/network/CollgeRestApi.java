@@ -34,6 +34,9 @@ public interface CollgeRestApi {
     Call<RegisterRequest> doRegister(@Body RegisterRequest registerRequest);
      @GET("circular")
     Call<List<CircularsResponse>> getCircularsList(@HeaderMap Map<String, String> headerMap);
+
+    @POST("circular")
+    Call<CircularsResponse> postCircularsList(@HeaderMap Map<String, String> headerMap);
    /* @POST("register")
     Call<RegisterRequest> register(@Body RegisterRequest registerRequest,
                                    @HeaderMap Map<String, String> headerMap);*/

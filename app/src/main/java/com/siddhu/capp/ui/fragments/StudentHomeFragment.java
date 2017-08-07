@@ -143,6 +143,7 @@ public class StudentHomeFragment extends BaseFragment implements CircularsPresen
     public void onStop() {
         super.onStop();
         mCircularsPresenter.detachView();
+
     }
 
     @Override

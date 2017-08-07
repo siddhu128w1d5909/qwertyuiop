@@ -25,6 +25,7 @@ import com.siddhu.capp.app.CollegeApplicationClass;
 import com.siddhu.capp.models.Circular;
 import com.siddhu.capp.ui.adapters.CircularAdapter;
 import com.siddhu.capp.ui.fragments.ChangePwdFragment;
+import com.siddhu.capp.ui.fragments.PostCircularFragment;
 import com.siddhu.capp.ui.fragments.StudentAttendenceFragment;
 import com.siddhu.capp.ui.fragments.StudentBookSearchFragment;
 import com.siddhu.capp.ui.fragments.StudentHomeFragment;
@@ -199,6 +200,9 @@ public class DashBoardActivity extends AppCompatActivity
                 break;
             case R.id.nav_share:
                 fragment = new StudentSocialShareFragment();
+                break;
+            case R.id.nav_post_circular:
+                fragment = new PostCircularFragment();
                 break;
 
             case R.id.nav_send:

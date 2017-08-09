@@ -8,10 +8,19 @@ import android.app.Application;
 
 public class CollegeApplicationClass extends Application {
     public static CollegeApplicationClass mCollegeApplication;
+    public String mLoginUserType;
     @Override
     public void onCreate() {
         super.onCreate();
         CollegeApplicationClass.mCollegeApplication = this;
+    }
+
+    public String getmLoginUserType() {
+        return mLoginUserType;
+    }
+
+    public void setmLoginUserType(String mLoginUserType) {
+        this.mLoginUserType = mLoginUserType;
     }
 
     public static CollegeApplicationClass getInstance() {

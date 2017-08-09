@@ -59,13 +59,8 @@ public class StudentHomeFragment extends BaseFragment implements CircularsPresen
         circularList = new ArrayList<Circular>();
         circularRespList = new ArrayList<CircularsResponse>();
         makeCircularsServiceCall();
-        for (int i = 0; i < names.length; i++) {
-            Circular member = new Circular(names[i], emails[i], profile_pics.getResourceId(i, -1));
-            circularList.add(member);
-        }
 
-        recyclerview = (RecyclerView) view.findViewById(R.id.circular_recyclerview);
-         layoutManager = new LinearLayoutManager(getActivity());
+
 
         return view;
     }
@@ -81,6 +76,7 @@ public class StudentHomeFragment extends BaseFragment implements CircularsPresen
         super.onViewCreated(view, savedInstanceState);
         //you can set the title for your toolbar here for different fragments different titles
         getActivity().setTitle("Home");
+
     }
 
   /*  @Override
@@ -107,10 +103,13 @@ public class StudentHomeFragment extends BaseFragment implements CircularsPresen
                     circularRespList.add(circularsResponse);
                 }
             }
-            circularsAdapter = new CircularsAdapter(circularRespList,getActivity(), (CircularsAdapter.OnCircularItemClickedListener) this);
+            recyclerview = (RecyclerView) view.findViewById(R.id.circular_recyclerview);
+            layoutManager = new LinearLayoutManager(getActivity());
+            layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
             recyclerview.setLayoutManager(layoutManager);
+            circularsAdapter = new CircularsAdapter(circularRespList,getActivity(), (CircularsAdapter.OnCircularItemClickedListener) this);
             recyclerview.setAdapter(circularsAdapter);
-           //circularsResponse = response.getTitle();
+            //circularsResponse = response.getTitle();
 
         }
     }

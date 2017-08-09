@@ -1,4 +1,4 @@
-package com.siddhu.capp.ui.activities;
+ package com.siddhu.capp.ui.activities;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -24,8 +24,17 @@ import com.siddhu.capp.R;
 import com.siddhu.capp.app.CollegeApplicationClass;
 import com.siddhu.capp.models.Circular;
 import com.siddhu.capp.ui.adapters.CircularAdapter;
+import com.siddhu.capp.ui.fragments.BusyFreeFragment;
 import com.siddhu.capp.ui.fragments.ChangePwdFragment;
-import com.siddhu.capp.ui.fragments.PostCircularFragment;
+//import com.siddhu.capp.ui.fragments.PostCircularFragment;
+import com.siddhu.capp.ui.fragments.ClassEngagedDetailsFragment;
+import com.siddhu.capp.ui.fragments.DropBoxFragment;
+import com.siddhu.capp.ui.fragments.ExaminationFragment;
+import com.siddhu.capp.ui.fragments.LeaveFragment;
+import com.siddhu.capp.ui.fragments.MaterialsFragment;
+import com.siddhu.capp.ui.fragments.ProjectFragment;
+import com.siddhu.capp.ui.fragments.ScheduleFragment;
+import com.siddhu.capp.ui.fragments.StaffAttendanceFragment;
 import com.siddhu.capp.ui.fragments.StudentAttendenceFragment;
 import com.siddhu.capp.ui.fragments.StudentBookSearchFragment;
 import com.siddhu.capp.ui.fragments.StudentHomeFragment;
@@ -81,6 +90,22 @@ public class DashBoardActivity extends AppCompatActivity
 
         navigationView = (NavigationView) findViewById(R.id.nav_view);
        // Menu menu = navigationView.getMenu();
+        mLoginUser = PreferenceUtil.getInstance(this).getStringParam(AppConstants.LOGIN_USER_TYPE);
+        //Toast.makeText(this,User,Toast.LENGTH_LONG).show();
+
+
+
+        navigationView = (NavigationView) findViewById(R.id.nav_view);
+        if(CollegeApplicationClass.getInstance().getmLoginUserType().equalsIgnoreCase(AppConstants.HOD)) {
+            navigationView.getMenu().clear();
+            navigationView.inflateMenu(R.menu.activity_hod_dash_board_drawer);
+        }else if(CollegeApplicationClass.getInstance().getmLoginUserType().equalsIgnoreCase(AppConstants.STUDENT)){
+            navigationView.getMenu().clear();
+            navigationView.inflateMenu(R.menu.activity_student_dash_board_drawer);
+        }else if(CollegeApplicationClass.getInstance().getmLoginUserType().equalsIgnoreCase(AppConstants.STAFF)){
+            navigationView.getMenu().clear();
+            navigationView.inflateMenu(R.menu.staff_dash_board_drawer);
+        }
 
         if (navigationView != null) {
             Menu menu = navigationView.getMenu();
@@ -136,20 +161,6 @@ public class DashBoardActivity extends AppCompatActivity
         return true;
     }
 
-    /*@Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }*/
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -170,15 +181,41 @@ public class DashBoardActivity extends AppCompatActivity
         //creating fragment object
         Fragment fragment = null;
 
-        //initializing the fragment object which is selected
         switch (itemId) {
             case R.id.nav_home:
                 fragment = new StudentHomeFragment();
                 break;
-            case R.id.nav_attendence:
+            case R.id.nav_studentattendence:
                 fragment = new StudentAttendenceFragment();
                 break;
-            case R.id.nav_marks:
+            case R.id.nav_staffattendence:
+                fragment = new StaffAttendanceFragment();
+                break;
+            case R.id.nav_schedule:
+                fragment = new ScheduleFragment();
+                break;
+            case R.id.nav_classengaged:
+                fragment = new ClassEngagedDetailsFragment();
+                break;
+            case R.id.nav_busy:
+                fragment = new BusyFreeFragment();
+                break;
+            case R.id.nav_dropbox:
+                fragment = new DropBoxFragment();
+                break;
+            case R.id.nav_results:
+                fragment = new ExaminationFragment();
+                break;
+            case R.id.nav_projects:
+                fragment = new ProjectFragment();
+                break;
+            case R.id.nav_materials:
+                fragment = new MaterialsFragment();
+                break;
+            case R.id.nav_leave:
+                fragment = new LeaveFragment();
+                break;
+            case R.id.nav_work:
                 fragment = new StudentMarksFragment();
                 break;
             case R.id.nav_checklib:
@@ -201,9 +238,10 @@ public class DashBoardActivity extends AppCompatActivity
             case R.id.nav_share:
                 fragment = new StudentSocialShareFragment();
                 break;
-            case R.id.nav_post_circular:
-                fragment = new PostCircularFragment();
-                break;
+
+           // case R.id.nav_post_circular:
+           //     fragment = new PostCircularFragment();
+           //     break;
 
             case R.id.nav_send:
                 fragment = new StudentSocialShareFragment();
@@ -241,7 +279,7 @@ public class DashBoardActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            return false;
         }
 
         if(item.getItemId()==R.id.it_delete)

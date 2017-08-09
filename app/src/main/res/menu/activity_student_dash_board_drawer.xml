@@ -8,11 +8,7 @@
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_menu_camera"
             android:title="Home" />
-        <item
-            android:id="@+id/hod_nav_home"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Hod Home"
-            />
+
         <item
             android:id="@+id/nav_attendence"
             android:icon="@drawable/ic_menu_gallery"
@@ -29,11 +25,6 @@
             android:id="@+id/nav_changpwd"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Change Password" />
-        <item
-            android:id="@+id/nav_post_circular"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Post Circular"/>
-
         <item
             android:id="@+id/nav_logout"
             android:icon="@drawable/ic_menu_manage"

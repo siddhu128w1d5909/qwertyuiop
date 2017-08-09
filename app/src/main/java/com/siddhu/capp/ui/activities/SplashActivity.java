@@ -30,7 +30,7 @@ public class SplashActivity extends Activity {
 //            final Intent intent = new Intent(MplSplashScreenActivity.this, MplThankyouActivity.class);
 //            startActivity(intent);
             if (PreferenceUtil.getInstance(getApplicationContext()).getBooleanParam(PreferenceUtil.IS_FIRST_TIME)) {
-                final Intent intent = new Intent(SplashActivity.this, UserLoginActivity.class);
+                final Intent intent = new Intent(SplashActivity.this, LoginTypeActivity.class);
                 startActivity(intent);
             } else {
                 final Intent intent = new Intent(SplashActivity.this, AppIntroActivity.class);

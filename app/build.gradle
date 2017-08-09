@@ -52,4 +52,7 @@ dependencies {
 
     //circle image view
     compile 'de.hdodenhof:circleimageview:2.1.0'
+
+    //multidex
+    compile 'com.android.support:multidex:1.0.1'
 }

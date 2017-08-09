@@ -20,6 +20,11 @@
         </activity>
 
         <activity
+            android:name=".ui.activities.LoginTypeActivity"
+            android:label="Login"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme" />
+        <activity
             android:name=".ui.activities.DashBoardActivity"
             android:label="@string/title_activity_student_dash_board"
             android:launchMode="singleTask"

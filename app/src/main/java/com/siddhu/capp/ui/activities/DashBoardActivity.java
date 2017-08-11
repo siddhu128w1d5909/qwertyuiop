@@ -47,11 +47,11 @@ import com.siddhu.capp.utils.Utility;
 
 import java.util.ArrayList;
 
-import static com.siddhu.capp.ui.fragments.StudentAttendenceFragment.adapter;
-import static com.siddhu.capp.ui.fragments.StudentAttendenceFragment.circularList;
+import static com.siddhu.capp.ui.fragments.StudentHomeFragment.adapter;
+import static com.siddhu.capp.ui.fragments.StudentHomeFragment.circularList;
 
 
-public class DashBoardActivity extends AppCompatActivity
+ public class DashBoardActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, View.OnLongClickListener {
 
     String mLoginUser;

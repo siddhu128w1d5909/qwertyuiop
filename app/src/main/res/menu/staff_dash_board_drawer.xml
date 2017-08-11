@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/main_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_style_circulars"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_studentattendence"
+            android:icon="@drawable/ic_menu_attendence"
+            android:title="Student Attendence" />
+
+        <item
+            android:id="@+id/nav_schedule"
+            android:icon="@drawable/ic_menu_schedule"
+            android:title="Schedule" />
+        <item
+            android:id="@+id/nav_classengaged"
+            android:icon="@drawable/ic_menu_class"
+            android:title="Class Engaged Details" />
+        <item
+            android:id="@+id/nav_busy"
+            android:icon="@drawable/ic_menu_busy"
+            android:title="Busy/Free Status" />
+        <item
+            android:id="@+id/nav_dropbox"
+            android:icon="@drawable/ic_menu_dropbox"
+            android:title="Drop Box" />
+
+        <item
+            android:id="@+id/nav_results"
+            android:icon="@drawable/ic_menu_result"
+            android:title="Examination Results" />
+        <item
+            android:id="@+id/nav_projects"
+            android:icon="@drawable/ic_menu_project"
+            android:title="Projects" />
+        <item
+            android:id="@+id/nav_materials"
+            android:icon="@drawable/ic_menu_materials"
+            android:title="E-materials" />
+        <item
+            android:id="@+id/nav_leave"
+            android:icon="@drawable/ic_menu_leave"
+            android:title="Leave Details Today" />
+        <item
+            android:id="@+id/nav_work"
+            android:icon="@drawable/ic_menu_project"
+            android:title="My Work load Today" />
+        <item
+            android:id="@+id/nav_checklib"
+            android:icon="@drawable/ic_menu_search"
+            android:title="Search Book" />
+        <item
+            android:id="@+id/nav_changpwd"
+            android:icon="@drawable/ic_menu_changepwd"
+            android:title="Change Password" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_menu_logout"
+            android:title="Logout" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <group
+                android:id="@+id/sub_group"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="Social Share" />
+                <item
+                    android:id="@+id/nav_send"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="Campus updates" />
+            </group>
+        </menu>
+    </item>
+
+
+</menu>

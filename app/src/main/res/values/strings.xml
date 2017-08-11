@@ -175,4 +175,16 @@
         <item>o-</item>
     </string-array>
 
+
+    <string-array name="sem_array">
+        <item>I-I</item>
+        <item>I-II</item>
+        <item>II-I</item>
+        <item>II-II</item>
+        <item>III-I</item>
+        <item>III-II</item>
+        <item>IV-I</item>
+        <item>IV-II</item>
+    </string-array>
+
 </resources>

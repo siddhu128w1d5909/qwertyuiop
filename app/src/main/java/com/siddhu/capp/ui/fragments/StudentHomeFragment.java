@@ -56,6 +56,7 @@ public class StudentHomeFragment extends BaseFragment implements CircularsPresen
         emails = getResources().getStringArray(R.array.email);
 
 
+
         circularList = new ArrayList<Circular>();
         circularRespList = new ArrayList<CircularsResponse>();
         makeCircularsServiceCall();

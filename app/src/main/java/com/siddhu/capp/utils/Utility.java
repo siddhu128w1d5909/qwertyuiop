@@ -388,9 +388,18 @@ public class Utility {
      * @param message alert message to be displayed
      */
     public static void showAlertMessage(final Activity activity, final String message) {
-        showAlertMessage(activity, message );
+        showAlertMessage(activity, message);
     }
-
+    /**
+     * This method is generic, used by the application has to display messages using AlertDialog.
+     * The alert dialog will have only "OK" button. On click of "OK" the alert dialog will be
+     * removed.
+     *
+     * @param message alert message to be displayed
+     */
+    public static void showAlertMessage(final Activity activity, final String message,  DialogInterface.OnClickListener listener) {
+        showAlertMessage(activity, message,listener );
+    }
 
 
 

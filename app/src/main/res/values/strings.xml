@@ -64,6 +64,7 @@
     <string name="confirm_btn">confirm</string>
     <string name="dont_allow_btn">Don\'t Allow</string>
     <string name="done_btn">done</string>
+    <string name="no_camera_permission">You need to provide permission to acess camera</string>
 
 
     <!-- Names -->
@@ -185,6 +186,14 @@
         <item>III-II</item>
         <item>IV-I</item>
         <item>IV-II</item>
+    </string-array>
+
+    <string-array name="year_array">
+        <item>2013-14</item>
+        <item>2014-15</item>
+        <item>2015-16</item>
+        <item>2016-17</item>
+
     </string-array>
 
 </resources>

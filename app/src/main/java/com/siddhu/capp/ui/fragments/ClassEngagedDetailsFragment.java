@@ -26,6 +26,6 @@ public class ClassEngagedDetailsFragment extends BaseFragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         //you can set the title for your toolbar here for different fragments different titles
-        getActivity().setTitle("ClassDetails");
+        getActivity().setTitle("Class Details");
     }
 }

@@ -22,7 +22,8 @@ public class CircularDetailsActivity extends AppCompatActivity implements View.O
 
     ImageView mCircularImage;
     TextView mSubject,mdate,mHeaderTxt;
-    CircularsResponse circular;
+    //CircularsResponse circular;
+    Circular circular;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,12 +43,15 @@ public class CircularDetailsActivity extends AppCompatActivity implements View.O
         mdate = (TextView)findViewById(R.id.circular_date);
         mHeaderTxt = (TextView)findViewById(R.id.header_txt);
         mHeaderTxt.setText("Circulars");
-        Glide.with(this).load(circular.getImage())
+        /*Glide.with(this).load(circular.getImage())
                 .fitCenter()
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .into(mCircularImage);
         mSubject.setText(circular.getTitle());
-        mdate.setText(circular.getSubject());
+        mdate.setText(circular.getSubject());*/
+        mCircularImage.setImageResource(circular.getPhotoID());
+        mSubject.setText(circular.getEmail());
+        mdate.setText(circular.getName());
         LinearLayout headerLayout = (LinearLayout) findViewById(R.id.header_layout);
         headerLayout.setVisibility(View.VISIBLE);
         ImageView backButton = (ImageView) findViewById(R.id.header_back_btn);

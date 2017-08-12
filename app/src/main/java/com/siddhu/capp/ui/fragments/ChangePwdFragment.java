@@ -4,6 +4,7 @@ import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.provider.SyncStateContract;
+import android.support.annotation.Nullable;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
@@ -54,7 +55,7 @@ public class ChangePwdFragment extends BaseFragment  {
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
-
+        getActivity().setTitle("Change Password");
         showDialog();
 
     }
@@ -167,4 +168,6 @@ public class ChangePwdFragment extends BaseFragment  {
             }
         });
     }
+
+
 }

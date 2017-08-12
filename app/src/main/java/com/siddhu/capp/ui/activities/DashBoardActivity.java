@@ -26,7 +26,8 @@ import com.siddhu.capp.models.Circular;
 import com.siddhu.capp.ui.adapters.CircularAdapter;
 import com.siddhu.capp.ui.fragments.BusyFreeFragment;
 import com.siddhu.capp.ui.fragments.ChangePwdFragment;
-//import com.siddhu.capp.ui.fragments.PostCircularFragment;
+//import com.siddhu.capp.ui.fragments.CircularsPostFragment;
+import com.siddhu.capp.ui.fragments.CircularsPostFragment;
 import com.siddhu.capp.ui.fragments.ClassEngagedDetailsFragment;
 import com.siddhu.capp.ui.fragments.DropBoxFragment;
 import com.siddhu.capp.ui.fragments.ExaminationFragment;
@@ -195,13 +196,14 @@ import static com.siddhu.capp.ui.fragments.StudentHomeFragment.circularList;
                 fragment = new ScheduleFragment();
                 break;
             case R.id.nav_classengaged:
-                fragment = new ClassEngagedDetailsFragment();
+                fragment = new CircularsPostFragment();
                 break;
             case R.id.nav_busy:
                 fragment = new BusyFreeFragment();
                 break;
             case R.id.nav_dropbox:
-                fragment = new DropBoxFragment();
+                //fragment = new DropBoxFragment();
+                fragment = new StudentAttendenceFragment();
                 break;
             case R.id.nav_results:
                 fragment = new ExaminationFragment();
@@ -240,7 +242,7 @@ import static com.siddhu.capp.ui.fragments.StudentHomeFragment.circularList;
                 break;
 
            // case R.id.nav_post_circular:
-           //     fragment = new PostCircularFragment();
+           //     fragment = new CircularsPostFragment();
            //     break;
 
             case R.id.nav_send:
